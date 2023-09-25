@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Contoh innerHTML di HTML
+        </title>
+    </head>
+    <body>
+        <h1>Selamat datang di halaman web!</h1>
+        <p id="paragraf">Ini adalah contoh teks. Klik button untuk mengubahnya</p>
+        <button onclick="ubahTeks()">Klik untuk mengubahnya</button>
+        <script>
+            function ubahTeks() {
+                var paragrafElemen = document.getElementById("paragraf");
+                paragrafElemen.innerHTML = "Teks telah diubah menggunakan innerHTML.";
+            }
+        </script>
+    </body>
+</html>
